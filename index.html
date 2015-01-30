@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang='zh'>
+<head>
+  <meta charset="UTF-8">
+  <title>南传商机</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script type="text/javascript">
+  function setTab(n,total){
+
+    //改变li背景
+    var $dom=$('.menu li').eq(n);
+     if($dom.hasClass('selected')) return;
+     $('.selected').removeClass('selected');
+     $dom.addClass('selected');
+     //实现选项卡
+     for(i=0;i<=total;i++)
+     {
+      var con=document.getElementById("tabbox"+i);
+      con.style.display=i==n?"block":"none";
+      
+     
+
+     }
+
+     //改变左边菜单栏宽度
+    var len=$('.right_content').outerHeight();
+    $('.left_nav').height(len);
+
+  }
+
+  </script>
+  
+</head>
+<body>
+<div class="main">
+<!--左边菜单栏-->
+  <div class="left_nav">
+  	<div class="logo">
+  		<img src="images/logo.png" alt=""/>
+  		<p class="logop">南方报业传媒集团</p>
+  		<p>广东广州</p>
+  	</div>
+  	<div >
+  		<ul class="menu">
+  			<li class="level1 home selected"><p onclick="setTab(0,5)">首页</p></li>
+
+  			<li class="level1 dinzhi "><p onclick="setTab(1,5)">定制情报滚动</p></li>
+        <li class="level2 "><p onclick="setTab(2,5)">今日政经热点</p></li> 
+        <li class="level2 "><p onclick="setTab(3,5)">企业定制信息</p></li>  
+        <li class="level2 "><p onclick="setTab(4,5)">经济趋势分析</p></li>  
+        <li class="level2 "><p onclick="setTab(5,5)">企业舆情报告</p></li> 
+
+        <li class="level1 pinpai "><p>品牌动态监测</p></li> 
+        <li class="level2 " ><p>品牌概况</p></li> 
+        <li class="level2 "><p>深度分析</p></li>  
+        <li class="level2"><p>数据表格</p></li>  
+        <li class="level2"><p>消费者洞察</p></li>
+  			
+  		</ul>
+  	</div>
+  </div>
+ 
+
+  
+  <div class="right_content">
+  	<!--头部导航-->
+    <div class="top">
+      <form>
+        <input type="text" class="sinput" placeholder="请输入搜索关键字" required/>
+        <input name="submit" class="ser" type="image" src="images/ser.jpg" / > 
+        <div class="clr"></div>
+      </form>
+      <p>南方报业传媒集团定制产品</p>
+
+    </div>
+
+
+
+    
+
+   <!--首页内容-->
+    <div id="tabbox0" class="tabbox" >
+      <ul >
+        <li class="home_ul">
+           <div class="list_title"><span>定制情报滚动</span></div>
+           <div class="news_list">
+            <a href="#" target="_blank"><img src="images/tuwen1.jpg" alt=""/></a>
+            <ul >
+              <li><a href="news.html" target="_blank">国务院“动真格”督查第三方评估</a><img src="images/new.png" alt=""/></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a><img src="images/new.png" alt=""/></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a><img src="images/new.png" alt=""/></li>
+              <li><a href="#" target="_blank">国务院“动真格”督查第三方评估</a></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a></li>
+            </ul>
+           </div>
+          
+        </li>
+
+        <li class="home_ul">
+          <div class="list_title"><span>企业舆情报告</span></div>
+           <div class="news_list">
+            <a href="#" target="_blank"><img src="images/tuwen2.jpg" alt=""/></a>
+            <ul >
+              <li><a href="#" target="_blank">国务院“动真格”督查第三方评估</a><img src="images/new.png" alt=""/></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a><img src="images/new.png" alt=""/></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a><img src="images/new.png" alt=""/></li>
+              <li><a href="#" target="_blank">国务院“动真格”督查第三方评估</a></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a></li>
+            </ul>
+           </div>
+        </li>
+      </ul>
+      <div class="clr"></div> 
+
+      <ul>
+        <li class="home_ul">
+          <div class="list_title"><span>品牌动态监测</span></div>
+           <div class="news_list">
+            <div class="home_icontitle"><p >关键词云</p></div>
+            <img src="images/gjc.png" alt=""/>
+           </div>
+        </li>
+
+        <li class="home_ul">
+         <div class="list_title"><span>基本数据分析</span></div>
+           <div class="news_list">
+            <div class="home_icontitle2"><p >真实用户终端分布</p></div>
+            <img src="images/terminal.png" alt=""/>
+           </div>
+        </li>
+      </ul>
+     <div class="clr"></div> 
+    </div>
+
+
+
+
+
+    <!--定制情报滚动内容-->
+    <div id="tabbox1" class="tabbox" >
+      <ul >
+        <li class="home_ul">
+           <div class="list_title"><span>经济趋势分析</span></div>
+           <div class="news_list">
+            <a href="#" target="_blank"><img src="images/tuwen1.jpg" alt=""/></a>
+            <ul >
+              <li><a href="#" target="_blank">国务院“动真格”督查第三方评估</a><img src="images/new.png" alt=""/></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a><img src="images/new.png" alt=""/></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a><img src="images/new.png" alt=""/></li>
+              <li><a href="#" target="_blank">国务院“动真格”督查第三方评估</a></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a></li>
+            </ul>
+           </div>
+          
+        </li>
+
+        <li class="home_ul">
+          <div class="list_title"><span>今日政经热点<img src="images/hot.png" style="margin-left:5px;"alt=""/></span></div>
+          <div class="news_list">
+            <p class="news_biaoti"><a href="#" target="_blank">中央农村工作会议闭幕  定调农业现代化路径</a></p>
+            <p class="news_zhaiyao">一千五百多名互不认识的家长，自发在网上组织起来，调查高考体育加分的“秘密”。有家长坚持追查放弃加分的270人，“应该要求他们当污点证人。” </p>
+            <ul >
+              <li><a href="#" target="_blank">国务院“动真格”督查第三方评估</a></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a></li>
+              <li><a href="#" target="_blank">国务院“动真格”督查第三方评估</a></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="clr"></div> 
+
+      <ul>
+        <li class="home_ul">
+          <div class="list_title"><span>企业定制信息<img src="images/hot.png" style="margin-left:5px;"alt=""/></span></div>
+          <div class="news_list">
+            <p class="news_biaoti"><a href="#" target="_blank">中央农村工作会议闭幕  定调农业现代化路径</a></p>
+            <p class="news_zhaiyao">一千五百多名互不认识的家长，自发在网上组织起来，调查高考体育加分的“秘密”。有家长坚持追查放弃加分的270人，“应该要求他们当污点证人。” </p>
+            <ul >
+              <li><a href="#" target="_blank">国务院“动真格”督查第三方评估</a></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a></li>
+              <li><a href="#" target="_blank">国务院“动真格”督查第三方评估</a></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="home_ul">
+         <div class="list_title"><span>企业舆情报告</span></div>
+           <div class="news_list">
+            <a href="#" target="_blank"><img src="images/tuwen2.jpg" alt=""/></a>
+            <ul >
+              <li><a href="#" target="_blank">国务院“动真格”督查第三方评估</a></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a></li>
+              <li><a href="#" target="_blank">国务院“动真格”督查第三方评估</a></li>
+              <li><a href="#" target="_blank">官员独董辞而未退 高校教师替补上阵</a></li>
+              <li><a href="#" target="_blank">最强私募投资路径</a></li>
+            </ul>
+           </div>
+        </li>
+      </ul>
+     <div class="clr"></div> 
+    </div>
+ 
+
+
+
+
+   <!--今日政经热点内容-->
+   <div id="tabbox2" class="tabbox">
+      <div class="lby_title"><p>南传商机首页 > 定制情报滚动 > 今日政经热点</p> </div>
+      <div style="float:left;padding:20px 0 0 10px;"><img src="images/list.png"></div><div class="lby_bluetitle">今日政经热点</div>
+      <div class="clr"></div> 
+      <div class="lby_newslist">
+        <ul>
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li style="border:0;">
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="lby_page"><span style="margin-right:10px;"><a href="#">上一页</a></span> <span><a href="#">下一页</a></span></div>
+     
+   </div>
+
+
+
+
+    <!--企业定制信息内容-->
+   <div id="tabbox3" class="tabbox">
+    <div class="lby_title"><p>南传商机首页 > 定制情报滚动 > 企业定制信息</p> </div>
+      <div style="float:left;padding:20px 0 0 10px;"><img src="images/list.png"></div><div class="lby_bluetitle">企业定制信息</div>
+      <div class="clr"></div> 
+      <div class="lby_newslist">
+       <ul>
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li style="border:0;">
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="lby_page"><span style="margin-right:10px;"><a href="#">上一页</a></span> <span><a href="#">下一页</a></span></div>
+   </div>
+
+
+
+
+
+    <!--经济趋势分析内容-->
+   <div id="tabbox4" class="tabbox">
+    <div class="lby_title"><p>南传商机首页 > 定制情报滚动 > 经济趋势分析</p> </div>
+      <div style="float:left;padding:20px 0 0 10px;"><img src="images/list.png"></div><div class="lby_bluetitle">经济趋势分析</div>
+      <div class="clr"></div> 
+      <div class="lby_newslist">
+        <ul>
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li style="border:0;">
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="lby_page"><span style="margin-right:10px;"><a href="#">上一页</a></span> <span><a href="#">下一页</a></span></div>
+   </div>
+
+
+
+
+
+
+    <!--企业舆情报告内容-->
+   <div id="tabbox5" class="tabbox">
+    <div class="lby_title"><p>南传商机首页 > 定制情报滚动 > 企业舆情报告</p> </div>
+      <div style="float:left;padding:20px 0 0 10px;"><img src="images/list.png"></div><div class="lby_bluetitle">企业舆情报告</div>
+      <div class="clr"></div> 
+      <div class="lby_newslist">
+        <ul>
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li>
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+
+          <li style="border:0;">
+            <p class="lby_biaoti"><a href="#" target="_blank">别让研究生转学成为“洗权”通道</a> </p>
+            <p class="lby_zhaiyao">湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学某些也让湖南大学湖南大学此次转学风波，其实就是一种“洗权”行为。此次“洗权”不仅让这些学生受益，也让湖南大学</p>
+            <p class="lby_readall"><a href="#" target="_blank">阅读全文>></a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="lby_page"><span style="margin-right:10px;"><a href="#">上一页</a></span> <span><a href="#">下一页</a></span></div>
+   </div>
+
+
+  </div>
+
+</div>
+
+<div class="clr"></div>
+
+
+
+
+
+<!--footer-->
+<div class="footer">
+<div id="foot">
+  <div class="foot_cnt">
+    <p>南方报业创新媒体云事业部</p>
+    <ul class="foot_links">
+      <li><a href="#">广告刊例</a></li>  <li><a href="#">系列媒体</a></li>  <li><a href="#">网站导航</a></li>  
+      <li><a href="#">联系我们</a></li>  <li style="border:0;"><a href="#">诚聘英才</a></li>
+    </ul>
+    <div class="clr"></div>
+   
+   <ul class="foot_contact">
+      <li>反馈电话：020-83003452</li> <li style="margin:0 20px;">邮箱：kaiwen@nfmedia.com</li>  <li>联系人：宁帆</li>
+    </ul>
+    <div class="clr"></div>
+
+    <ul class="foot_address">
+      <li>地址：广州市广州大道中289号</li>  <li>邮编：510601</li>
+    </ul>
+    <div class="clr"></div> 
+  </div> 
+</div>
+</div>
+
+</body>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/placeholder.js"></script>
+
+
+</html>

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+/* set image max width to 100% */
+img {
+    max-width: 100%;
+    -ms-interpolation-mode: bicubic;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+a{text-decoration: none;}
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+html,body{padding: 0;margin: 0;width: 100%;background: #e1e1e1 ;font-family: "微软雅黑";}
+.clr { clear:both; padding:0; margin:0; background:none; }
+.main{width: 1000px;margin: 0 auto;}
+.right_content{float: left; }
+.tabbox{display: none;}
+/***top*******/
+.top{background: url("../images/top.gif");width: 820px;height: 135px;}
+form {padding:20px 0 0 135px; }
+.sinput{float: left;width: 490px;height: 24px;border:0;border-right: solid 1px #ccc;font:normal 18px "微软雅黑";color:#636363;padding: 10px 0 10px 20px; }
+.ser{float: left;width: 60px;height: 44px;}
+.top p{display:block;margin-top:25px;font-size: 14px;color: #fff;text-align: center;}
+
+/***left*******/
+.left_nav{float: left;width: 180px;background-color: #1c2024;height: 955px;}
+.logo{padding-top:34px;text-align: center;font:normal 12px "微软雅黑";color:#959595; margin-bottom: 34px;}
+.logop{display:block;color: #ffffff; font-size: 14px;margin:20px 0 18px 0;  }
+.menu li{list-style: none;color: #fff;line-height: 25px;padding:11px 0 11px 17px;cursor: pointer;}
+.menu li:hover{color:#168bd9; }
+.level1{font:normal 16px "微软雅黑";background: url("../images/sprites.png") no-repeat left;}
+.level1>p{margin-left: 40px;margin-top: -0.5px;}
+.level2>p{font:normal 14px "微软雅黑";margin-left: 40px;}
+.home{background-position: 0 -194px;}
+.dinzhi{background-position: 0 -97px;}
+.pinpai{background-position:0 -349px;}
+.selected{background-color: #3498db;cursor: default;}
+/***footer*******/
+.footer{width: 100%;background-color: #1c2024;height: 141px;border-top: solid 1px #464646;}
+#foot{margin: 0 auto;font-size: 12px;color: #fff;width: 1000px;}
+#foot ul li{list-style: none;float: left;}
+#foot a{color: #fff;}
+.foot_cnt{margin: 25px 0 0 180px;}
+.foot_links li{border-right: solid 1px #00bff3;width: 60px;margin :8px 8px 8px 0;}
+.foot_contact li{margin-bottom: 8px;}
+.foot_address li{width: 200px;}
+/************************************************************************************
+首页 STYLING
+*************************************************************************************/
+#tabbox0{margin: 3px 0 3px 3px;display: block;}
+.home_ul {list-style: none;float: left;background-color: #fff;width: 400px;height: 400px;margin:  3px;}
+.news_list{padding: 0 15px;}
+.list_title{height: 36px;border-bottom: solid 2px #cfcfcf;font: bold 18px "微软雅黑";color: #3498db;margin-bottom: 14px;}
+.list_title span{display:block;padding: 9px 0 0 15px;}
+.news_list ul{margin:20px 0 0 12px;}
+.news_list ul li{list-style: url("../images/list_icon.png");margin-bottom: 7px;}
+.news_list ul li a{color: #636363;font: normal 12px "宋体";padding-right: 8px;}
+.news_list ul li :hover{color:#3498db; }
+.home_icontitle{margin: 20px 0 20px 155px;border-bottom: solid 1px #636363;padding-bottom: 8px;width: 90px;}
+.home_icontitle p,.home_icontitle2 p{text-align: center;font: normal 18px "微软雅黑";color: #636363;}
+.home_icontitle2{ margin: 20px 0 20px 110px;border-bottom: solid 1px #636363;padding-bottom: 8px;width: 180px;}
+
+/************************************************************************************
+定制情报页面 STYLING
+*************************************************************************************/
+#tabbox1{margin: 3px 0 3px 3px;}
+.news_biaoti{font: bold 18px "微软雅黑";display: block; margin-bottom: 10px;}
+.news_biaoti a{color: #636363;}
+.news_zhaiyao{font: normal 12px "宋体";color: #959595;line-height: 24px;display: block;}
+/************************************************************************************
+新闻列表页面 STYLING
+*************************************************************************************/
+#tabbox2,#tabbox3,#tabbox4,#tabbox5{background-color: #fff;width: 810px;margin: 5px 0 5px 5px;}
+.lby_title{padding: 25px 0 20px;border-bottom: solid 1px #dddddd;margin: 0 10px;}
+.lby_title p{font: normal 12px "宋体";color: #999999; }
+.lby_bluetitle{float: left;padding:23px 0 0 3px;font: bold 14px "宋体";color: #3498db}
+.lby_newslist ul{list-style: none;}
+.lby_newslist ul li{margin:  0 35px ;border-bottom: dotted 1px #b3b3b3;padding: 15px 0 10px 0;font:normal 14px "宋体";line-height: 20px;}
+/*.lby_newslist ul li:nth-child(6) {border: none;}*/
+.lby_biaoti a{color: #1c2024; }
+.lby_zhaiyao{color: #999999;text-indent:28px;}
+.lby_readall a{color: #3498db;}
+.lby_page{padding: 50px 0 20px 600px;}
+.lby_page a{color: #000;}
+
+/************************************************************************************
+新闻正文页面 STYLING
+*************************************************************************************/
+.zwy_newscnt{background-color: #fff;width: 810px;margin: 5px 0 5px 5px;height:800px; }
+.zwy_title{padding: 15px 0 25px;margin: 0 10px;font: normal 12px "宋体";color: #999999;}
+.zwy_biaoticnt{margin: 0 75px 15px 75px;padding-bottom:15px;border-bottom: solid 1px #dddddd;text-align: center;}
+.zwy_biaoticnt span{font:normal 12px "宋体";color: #999999; }
+.zwy_biaoticnt p{font: normal 20px "微软雅黑";color: #1c2024;line-height: 40px;}
+.zwy_content{padding: 0 20px;}
+.zwy_content p{font:normal 14px "宋体";color: #1c2024; line-height: 24px;display: block; margin-bottom: 25px;text-indent: 20px;}
+.zwy_zb{padding: 10px 0 30px 400px;}
+.zwy_zb span{font:normal 12px "宋体";color: #999999;}
+
+
